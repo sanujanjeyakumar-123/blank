@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite - Your Wellness Journey Starts Here</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="56x56" href="images/appletouchicon56x56.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/appletouchicon114x114.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2d5a27">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🌿 GreenBite</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="recipes.html" class="nav-link">Recipes</a>
+                <a href="calculator.html" class="nav-link">Calculator</a>
+                <a href="workouts.html" class="nav-link active">Workouts</a>
+                <a href="mindfulness.html" class="nav-link">Mindfulness</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>💪 Workout Generator</h1>
+                <p>Generate personalized workout plans based on your preferences</p>
+            </div>
+        </section>
+
+        <section class="workout-section">
+            <div class="container">
+                <div class="workout-generator">
+                    <div class="generator-controls">
+                        <div class="form-group">
+                            <label for="body-part">Target Body Part</label>
+                            <select id="body-part">
+                                <option value="full-body">Full Body</option>
+                                <option value="upper-body">Upper Body</option>
+                                <option value="lower-body">Lower Body</option>
+                                <option value="core">Core</option>
+                                <option value="cardio">Cardio</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="equipment">Equipment</label>
+                            <select id="equipment">
+                                <option value="none">No Equipment</option>
+                                <option value="dumbbells">Dumbbells</option>
+                                <option value="resistance-bands">Resistance Bands</option>
+                                <option value="gym">Full Gym</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" id="generate-workout">Generate Workout</button>
+                    </div>
+
+                    <div class="workout-plan" id="workout-plan" style="display: none;">
+                        <div class="simple-timer" id="simple-timer" style="display: none;">
+                            <h4 id="current-exercise">Exercise Name</h4>
+                            <div class="timer-display">
+                                <span id="timer-minutes">00</span>:<span id="timer-seconds">00</span>
+                            </div>
+                            <div class="timer-buttons">
+                                <button class="btn btn-primary" id="timer-pause">Pause</button>
+                                <button class="btn btn-outline" id="timer-stop">Stop</button>
+                                <button class="btn btn-outline" id="timer-next">Next</button>
+                            </div>
+                        </div>
+                        <h3>Your Workout Plan</h3>
+                        <div class="workout-exercises" id="workout-exercises">
+                            <!-- Exercises will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+  <div class="footer-top">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">About Us</a>
+  </div>
+
+  
+  <div class="footer-newsletter">
+    <p>Subscribe to our Newsletter</p>
+  <form  id="newsletter-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="newsletter-email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 GreenBite. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/workout.js"></script>
+</body>
+</html>

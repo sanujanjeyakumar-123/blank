@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite - Your Wellness Journey Starts Here</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="56x56" href="images/appletouchicon56x56.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/appletouchicon114x114.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2d5a27">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🌿 GreenBite</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="recipes.html" class="nav-link">Recipes</a>
+                <a href="calculator.html" class="nav-link">Calculator</a>
+                <a href="workouts.html" class="nav-link">Workouts</a>
+                <a href="mindfulness.html" class="nav-link active">Mindfulness</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>🧘 Mindfulness</h1>
+                <p>Find peace and balance through meditation and mindful practices</p>
+            </div>
+        </section>
+
+        <section class="mindfulness-section">
+            <div class="container">
+                <div class="mindfulness-tools">
+                    <!-- Breathing Exercise -->
+                    <div class="mindfulness-card">
+                        <h3>🌬️ Breathing Exercise</h3>
+                        <p>Follow the circle to practice deep breathing</p>
+                        <div class="breathing-container">
+                            <div class="breathing-circle" id="breathing-circle">
+                                <div class="breathing-text" id="breathing-text">Breathe</div>
+                            </div>
+                            <button class="btn btn-primary" id="breathing-start">Start Breathing</button>
+                        </div>
+                    </div>
+
+                    <!-- Meditation Timer -->
+                    <div class="mindfulness-card">
+                        <h3>⏰ Meditation Timer</h3>
+                        <p>Set a timer for your meditation session</p>
+                        <div class="meditation-timer">
+                            <div class="timer-preset">
+                                <button class="preset-btn" data-minutes="5">5 min</button>
+                                <button class="preset-btn" data-minutes="10">10 min</button>
+                                <button class="preset-btn" data-minutes="15">15 min</button>
+                                <button class="preset-btn" data-minutes="20">20 min</button>
+                            </div>
+                            <div class="timer-display-meditation">
+                                <span class="meditation-time" id="meditation-time">00:00</span>
+                            </div>
+                            <div class="timer-controls">
+                                <button class="btn btn-primary" id="meditation-start">Start</button>
+                                <button class="btn btn-secondary" id="meditation-pause" style="display: none;">Pause</button>
+                                <button class="btn btn-outline" id="meditation-reset">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ambient Sounds -->
+                    <div class="mindfulness-card">
+                        <h3>🎵 Ambient Sounds</h3>
+                        <p>Choose calming sounds for your practice</p>
+                        <div class="ambient-sounds">
+                            <div class="sound-options">
+                                <button class="sound-btn" data-sound="rain">🌧️ Rain</button>
+                                <button class="sound-btn" data-sound="sea">🌊 Sea</button>
+                                <button class="sound-btn" data-sound="bird">🐦 Bird</button>
+                                <button class="sound-btn" data-sound="wind">💨 Wind</button>
+                            </div>
+                            <div class="sound-controls">
+                                <button class="btn btn-primary" id="sound-play">Play</button>
+                                <button class="btn btn-secondary" id="sound-stop">Stop</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Session History -->
+                <div class="session-history">
+                    <h3>📈 Your Progress</h3>
+                    <div class="progress-stats" id="progress-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="total-sessions">0</span>
+                            <span class="stat-label">Total Sessions</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="total-minutes">0</span>
+                            <span class="stat-label">Total Minutes</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="streak-days">0</span>
+                            <span class="stat-label">Day Streak</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+
+
+
+
+  <div class="footer-top">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">About Us</a>
+  </div>
+
+  
+  <div class="footer-newsletter">
+    <p>Subscribe to our Newsletter</p>
+  <form  id="newsletter-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="newsletter-email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 GreenBite. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/mindfulness.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite - Your Wellness Journey Starts Here</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="56x56" href="images/appletouchicon56x56.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/appletouchicon114x114.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2d5a27">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🌿 GreenBite</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="recipes.html" class="nav-link active">Recipes</a>
+                <a href="calculator.html" class="nav-link">Calculator</a>
+                <a href="workouts.html" class="nav-link">Workouts</a>
+                <a href="mindfulness.html" class="nav-link">Mindfulness</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>🥗 Healthy Recipes</h1>
+                <p>Discover delicious and nutritious recipes for every meal</p>
+            </div>
+        </section>
+
+        <section class="recipes-section">
+            <div class="container">
+                <div class="recipes-controls">
+                    <div class="search-container">
+                        <input type="text" id="recipe-search" placeholder="Search recipes..." class="search-input">
+                    </div>
+                    <div class="filter-container">
+                        <select id="category-filter" class="filter-select">
+                            <option value="all">All Categories</option>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="snack">Snack</option>
+                            <option value="dessert">Dessert</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="recipes-grid" id="recipes-grid">
+                    <!-- Recipes will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Recipe Modal -->
+<div class="modal" id="recipe-modal">
+  <div class="modal-content">
+    <span class="modal-close" id="modal-close">&times;</span>
+    <div class="modal-body" id="modal-body">
+      <!-- Recipe details will be loaded here -->
+    </div>
+  </div>
+</div>
+
+
+    <footer class="footer">
+
+
+
+
+  <div class="footer-top">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">About Us</a>
+  </div>
+
+  
+  <div class="footer-newsletter">
+    <p>Subscribe to our Newsletter</p>
+  <form  id="newsletter-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="newsletter-email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 GreenBite. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/recipes.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite - Your Wellness Journey Starts Here</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="56x56" href="images/appletouchicon56x56.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/appletouchicon114x114.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2d5a27">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🌿 GreenBite</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="recipes.html" class="nav-link">Recipes</a>
+                <a href="calculator.html" class="nav-link active">Calculator</a>
+                <a href="workouts.html" class="nav-link">Workouts</a>
+                <a href="mindfulness.html" class="nav-link">Mindfulness</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>📊 Nutrition Calculator</h1>
+                <p>Calculate your daily calorie needs and optimal macronutrient breakdown</p>
+            </div>
+        </section>
+
+        <section class="calculator-section">
+            <div class="container">
+                <div class="calculator-container">
+                    <form class="calculator-form" id="calculator-form">
+                        <div class="form-group">
+                            <label for="age">Age (years)</label>
+                            <input type="number" id="age" min="1" max="100" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="height">Height (cm)</label>
+                            <input type="number" id="height" min="1" max="250" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="weight">Weight (kg)</label>
+                            <input type="number" id="weight" min="1" max="300" step="0.1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="activity">Activity Level</label>
+                            <select id="activity" required>
+                                <option value="">Select Activity Level</option>
+                                <option value="1.2">Sedentary (little to no exercise)</option>
+                                <option value="1.375">Lightly active (light exercise 1-3 days/week)</option>
+                                <option value="1.55">Moderately active (moderate exercise 3-5 days/week)</option>
+                                <option value="1.725">Very active (hard exercise 6-7 days/week)</option>
+                                <option value="1.9">Super active (very hard exercise, physical job)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Calculate</button>
+                    </form>
+
+                    <div class="results-container" id="results-container" style="display: none;">
+                        <h3>Your Nutritional Requirements</h3>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <h4>BMR</h4>
+                                <p class="result-value" id="bmr-result">--</p>
+                                <small>Basal Metabolic Rate</small>
+                            </div>
+                            <div class="result-card">
+                                <h4>TDEE</h4>
+                                <p class="result-value" id="tdee-result">--</p>
+                                <small>Total Daily Energy Expenditure</small>
+                            </div>
+                        </div>
+                        
+                        <div class="macros-section">
+                            <h4>Recommended Daily Macronutrients</h4>
+                            <div class="macro-item">
+                                <div class="macro-info">
+                                    <span class="macro-name">Carbohydrates (50%)</span>
+                                    <span class="macro-value" id="carbs-value">-- g</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill carbs" id="carbs-progress"></div>
+                                </div>
+                            </div>
+                            <div class="macro-item">
+                                <div class="macro-info">
+                                    <span class="macro-name">Protein (20%)</span>
+                                    <span class="macro-value" id="protein-value">-- g</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill protein" id="protein-progress"></div>
+                                </div>
+                            </div>
+                            <div class="macro-item">
+                                <div class="macro-info">
+                                    <span class="macro-name">Fats (30%)</span>
+                                    <span class="macro-value" id="fats-value">-- g</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill fats" id="fats-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+
+
+
+
+  <div class="footer-top">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">About Us</a>
+  </div>
+
+  
+  <div class="footer-newsletter">
+    <p>Subscribe to our Newsletter</p>
+  <form  id="newsletter-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="newsletter-email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 GreenBite. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+</html>

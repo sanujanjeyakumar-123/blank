@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite - Your Wellness Journey Starts Here</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="56x56" href="images/appletouchicon56x56.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/appletouchicon114x114.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2d5a27">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🌿 GreenBite</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="recipes.html" class="nav-link">Recipes</a>
+                <a href="calculator.html" class="nav-link">Calculator</a>
+                <a href="workouts.html" class="nav-link">Workouts</a>
+                <a href="mindfulness.html" class="nav-link">Mindfulness</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform Your Life with <span class="text-primary">GreenBite</span></h1>
+                <p class="hero-subtitle">Discover healthy recipes, track your nutrition, and embrace mindful living</p>
+                <div class="hero-quote" id="health-quote">
+                    <p id="quote-text">Loading wellness wisdom...</p>
+                </div>
+                <div class="hero-actions">
+                    <a href="recipes.html" class="btn btn-primary">Explore Recipes</a>
+                    <a href="calculator.html" class="btn btn-secondary">Start Calculator</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/home.jpg" alt="Healthy lifestyle" class="hero-img">
+            </div>
+        </section>
+
+        <section class="daily-tip">
+            <div class="container">
+                <h2>💡 Daily Health Tip</h2>
+                <div class="tip-card" id="daily-tip-card">
+                    <p id="daily-tip-text">Loading your daily dose of wellness...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Your Wellness Toolkit</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🥗</div>
+                        <h3>Healthy Recipes</h3>
+                        <p>Discover nutritious and delicious meals with detailed nutritional information</p>
+                        <a href="recipes.html" class="feature-link">Browse Recipes -></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>BMR Calculator</h3>
+                        <p>Calculate daily resting calorie needs with BMR calculator.</p>
+                        <a href="calculator.html" class="feature-link">Calculate Now -></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💪</div>
+                        <h3>Workout Generator</h3>
+                        <p>Get personalized workout plans tailored to your fitness goals</p>
+                        <a href="workouts.html" class="feature-link">Get Workout -></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧘</div>
+                        <h3>Breathing Exercise</h3>
+                        <p>Practicebreathing exercises for mental wellness</p>
+                        <a href="mindfulness.html" class="feature-link">Start Practice -></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧘</div>
+                        <h3>Meditation Timer</h3>
+                        <p>Track meditation sessions for peace and balance.</p>
+                        <a href="mindfulness.html" class="feature-link">Start TIMER -></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧘</div>
+                        <h3>TDEE Calculator</h3>
+                        <p>Track daily calories burned to manage fitness goals effectively.</p>
+                        <a href="calculator.html" class="feature-link">Calculate Now -></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+
+
+
+
+  <div class="footer-top">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">About Us</a>
+  </div>
+
+  
+  <div class="footer-newsletter">
+    <p>Subscribe to our Newsletter</p>
+  <form  id="newsletter-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="newsletter-email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 GreenBite. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
