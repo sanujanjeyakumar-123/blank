@@ -1,0 +1,70 @@
+{
+    "full-body": {
+        "none": [
+            { "name": "Push-ups", "duration": 45, "rest": 15 },
+            { "name": "Squats", "duration": 45, "rest": 15 },
+            { "name": "Plank", "duration": 30, "rest": 15 },
+            { "name": "Jumping Jacks", "duration": 45, "rest": 15 },
+            { "name": "Burpees", "duration": 30, "rest": 15 },
+            { "name": "Mountain Climbers", "duration": 45, "rest": 15 }
+        ],
+        "dumbbells": [
+            { "name": "Dumbbell Squats", "duration": 45, "rest": 15 },
+            { "name": "Dumbbell Press", "duration": 45, "rest": 15 },
+            { "name": "Dumbbell Rows", "duration": 45, "rest": 15 },
+            { "name": "Dumbbell Lunges", "duration": 45, "rest": 15 },
+            { "name": "Dumbbell Deadlifts", "duration": 45, "rest": 15 },
+            { "name": "Dumbbell Thrusters", "duration": 45, "rest": 15 }
+        ]
+    },
+    "upper-body": {
+        "none": [
+            { "name": "Push-ups", "duration": 45, "rest": 15 },
+            { "name": "Pike Push-ups", "duration": 30, "rest": 15 },
+            { "name": "Tricep Dips", "duration": 45, "rest": 15 },
+            { "name": "Plank to T", "duration": 45, "rest": 15 },
+            { "name": "Diamond Push-ups", "duration": 30, "rest": 15 }
+        ],
+        "dumbbells": [
+            { "name": "Dumbbell Press", "duration": 45, "rest": 15 },
+            { "name": "Dumbbell Rows", "duration": 45, "rest": 15 },
+            { "name": "Dumbbell Flyes", "duration": 45, "rest": 15 },
+            { "name": "Bicep Curls", "duration": 45, "rest": 15 },
+            { "name": "Overhead Press", "duration": 45, "rest": 15 }
+        ]
+    },
+    "lower-body": {
+        "none": [
+            { "name": "Squats", "duration": 45, "rest": 15 },
+            { "name": "Lunges", "duration": 45, "rest": 15 },
+            { "name": "Glute Bridges", "duration": 45, "rest": 15 },
+            { "name": "Calf Raises", "duration": 45, "rest": 15 },
+            { "name": "Wall Sit", "duration": 30, "rest": 15 }
+        ],
+        "dumbbells": [
+            { "name": "Dumbbell Squats", "duration": 45, "rest": 15 },
+            { "name": "Dumbbell Lunges", "duration": 45, "rest": 15 },
+            { "name": "Dumbbell Deadlifts", "duration": 45, "rest": 15 },
+            { "name": "Dumbbell Step-ups", "duration": 45, "rest": 15 },
+            { "name": "Dumbbell Calf Raises", "duration": 45, "rest": 15 }
+        ]
+    },
+    "core": {
+        "none": [
+            { "name": "Plank", "duration": 30, "rest": 15 },
+            { "name": "Crunches", "duration": 45, "rest": 15 },
+            { "name": "Russian Twists", "duration": 45, "rest": 15 },
+            { "name": "Leg Raises", "duration": 45, "rest": 15 },
+            { "name": "Bicycle Crunches", "duration": 45, "rest": 15 }
+        ]
+    },
+    "cardio": {
+        "none": [
+            { "name": "Jumping Jacks", "duration": 45, "rest": 15 },
+            { "name": "High Knees", "duration": 45, "rest": 15 },
+            { "name": "Burpees", "duration": 30, "rest": 15 },
+            { "name": "Mountain Climbers", "duration": 45, "rest": 15 },
+            { "name": "Jump Squats", "duration": 45, "rest": 15 }
+        ]
+    }
+}
